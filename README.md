@@ -6,14 +6,14 @@ Software Training structure for lakemonsters 2635
 2. Git basics
 3. Robot constants
     - Interface control document (ICD)
-4. subsystem
+4. Subsystem
 5. Debugging basics
 6. Commands 
     - Structure
     - Button bindings
-    - Pneumatics
+    - [Pneumatics](https://github.com/Lakemonsters2635/pneumatics_base)
     - Limit switches
-        - Limit switch elevator
+        - [Limit switch elevator](https://github.com/Lakemonsters2635/ElevatorBase)
     - Encoders
         - Tank drive
         - Brush motor
@@ -30,7 +30,7 @@ Software Training structure for lakemonsters 2635
 2. PID
 3. Performing System ID on elevator
 4. Elevators
-5. Arm
+5. [Arm](https://github.com/Lakemonsters2635/arm_motor_base)
 6. Tank
 7. Swerve
 
