@@ -1,4 +1,4 @@
-# training
+# Training
 Software Training structure for lakemonsters 2635
 
 # Basics
@@ -74,3 +74,13 @@ Software Training structure for lakemonsters 2635
 
 # Elementary Java
 TBD
+
+# Helpful Links
+- Vendor Libraries:
+    - [CTRE Library Download](https://store.ctr-electronics.com/software/)
+        - The link is at the bottom of the page, get the v5 link.
+    - [REV Library Download](https://docs.revrobotics.com/sparkmax/software-resources/spark-max-api-information#java-api)
+        - Located around the middle of the page, use the online installation method
+    - [Kauai Labs Library Download](https://pdocs.kauailabs.com/navx-mxp/software/roborio-libraries/java/)
+        - Located around the middle of the page, use the online installation method
+- [WPILib Java API Docs](https://github.wpilib.org/allwpilib/docs/release/java/index.html)
