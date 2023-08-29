@@ -3,6 +3,11 @@ Software Training structure for Lakemonsters 2635
 
 Basics
 ---
+<script>
+mermaidAPI.initialize({
+    securityLevel: 'loose'
+});
+</script>
 ```mermaid
     flowchart BT
     subgraph BasicsPt.1
