@@ -3,11 +3,7 @@ Software Training structure for Lakemonsters 2635
 
 Basics
 ---
-<script>
-mermaidAPI.initialize({
-    securityLevel: 'loose'
-});
-</script>
+
 ```mermaid
     flowchart BT
     subgraph BasicsPt.1
@@ -26,13 +22,11 @@ mermaidAPI.initialize({
             id4-->id5[Button Bindings];
             id4-->Encoders;
             id4-->id6[Limit Switches];
-            Structure-->Pneumatics;
-            click Pneumatics "https://github.com/Lakemonsters2635/pneumatics_base" "Pneumatics Base Code"
-            id5-->Pneumatics;
-            Structure-->id7[Limit Switch Elevator];
-            click id7 "https://github.com/Lakemonsters2635/ElevatorBase" "Elevator Base Code"
-            id5-->id7;
-            id6-->id7;
+            Structure-->B[<a href='https://github.com/Lakemonsters2635/pneumatics_base'>Pneumatics</a>];
+            id5-->B;
+            Structure-->A[<a href='https://github.com/Lakemonsters2635/ElevatorBase'>Limit Switch Elevator</a>];
+            id5-->A;
+            id6-->A;
             Structure-->id8[Tank Drive];
             Encoders-->id9[Brush Motor];
             id5-->id9;
@@ -49,6 +43,7 @@ mermaidAPI.initialize({
         end
     FacilitationBasics-->CodeBasics;
     BasicsPt.1-->BasicsCapstone;
+    
 ```
 **note: click on nodes for links to base code 
 # Robot
