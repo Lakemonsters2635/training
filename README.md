@@ -1,6 +1,7 @@
 # Training
 Software Training structure for Lakemonsters 2635
 
+---
 Basics
 ---
 
@@ -22,9 +23,9 @@ Basics
             id4-->id5(Button Bindings);
             id4-->id14(Encoders);
             id4-->id6(Limit Switches);
+            id13-->A(<a href='https://github.com/Lakemonsters2635/ElevatorBase'>Limit Switch Elevator</a>);
             id13-->B(<a href='https://github.com/Lakemonsters2635/pneumatics_base'>Pneumatics</a>);
             id5-->B;
-            id13-->A(<a href='https://github.com/Lakemonsters2635/ElevatorBase'>Limit Switch Elevator</a>);
             id5-->A;
             id6-->A;
             id13-->id8(Tank Drive);
@@ -45,7 +46,7 @@ Basics
     BasicsPt.1-->BasicsCapstone;
     
 ```
-**note: click on nodes for links to base code 
+**note: click on nodes for learning links 
 # Robot
 1. Feedback/feedforward
 2. PID
@@ -54,6 +55,12 @@ Basics
 5. [Arm](https://github.com/Lakemonsters2635/arm_motor_base)
 6. Tank
 7. Swerve
+---
+Robot
+---
+```mermaid
+
+```
 
 # Auto
 1. Command scheduler/auto chooser
@@ -62,6 +69,12 @@ Basics
     - Path planner basics
     - Path planner limitations
 1. Vision integration
+---
+Auto
+---
+```mermaid
+
+```
 
 # Vision
 - Limelight
@@ -84,8 +97,12 @@ Basics
         - Basic Linux commands
         - Deploy Monster vision
 
+---
+Vision
+---
+```mermaid
 
-
+```
 
 # Elementary Java
 TBD
