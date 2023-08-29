@@ -1,29 +1,6 @@
 # Training
-Software Training structure for lakemonsters 2635
+Software Training structure for Lakemonsters 2635
 
-# Basics
-1. Development Environment Setup
-2. Git basics
-3. Robot constants
-4. Subsystem
-5. Debugging basics
-6. Commands 
-    - Structure
-    - Button bindings
-    - [Pneumatics](https://github.com/Lakemonsters2635/pneumatics_base)
-    - Limit switches
-        - [Limit switch elevator](https://github.com/Lakemonsters2635/ElevatorBase)
-    - Encoders
-        - Tank drive
-        - Brush motor
-7. Basic capstone
-    - Network tables
-    - Debugging
-        - Shuffleboard
-    - Parallel/Sequential
-    - Ternaries
-    - Lambdas
----
 Basics
 ---
 ```mermaid
@@ -45,8 +22,10 @@ Basics
             id4-->Encoders;
             id4-->id6[Limit Switches];
             Structure-->Pneumatics;
+            click Pneumatics "https://github.com/Lakemonsters2635/pneumatics_base" "Pneumatics Base Code"
             id5-->Pneumatics;
             Structure-->id7[Limit Switch Elevator];
+            click id7 "https://github.com/Lakemonsters2635/ElevatorBase" "Elevator Base Code"
             id5-->id7;
             id6-->id7;
             Structure-->id8[Tank Drive];
@@ -66,8 +45,7 @@ Basics
     FacilitationBasics-->CodeBasics;
     BasicsPt.1-->BasicsCapstone;
 ```
-
-
+**note: click on nodes for links to base code 
 # Robot
 1. Feedback/feedforward
 2. PID
