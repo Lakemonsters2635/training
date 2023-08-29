@@ -5,7 +5,6 @@ Software Training structure for lakemonsters 2635
 1. Development Environment Setup
 2. Git basics
 3. Robot constants
-    - Interface control document (ICD)
 4. Subsystem
 5. Debugging basics
 6. Commands 
@@ -24,6 +23,50 @@ Software Training structure for lakemonsters 2635
     - Parallel/Sequential
     - Ternaries
     - Lambdas
+---
+Basics
+---
+```mermaid
+    flowchart BT
+    subgraph BasicsPt.1
+        direction LR
+        subgraph FacilitationBasics
+            direction BT
+            id0[Development Environment Setup]-->id1
+            id1[Git Basics]-->Downloads;
+            Downloads-->id2[Robot Constants];
+        end
+        subgraph CodeBasics
+            direction BT
+            Subsystem-->id3[Debugging Basics];
+            id3-->id4[Command Structure];
+            id4-->Structure;
+            id4-->id5[Button Bindings];
+            id4-->Encoders;
+            id4-->id6[Limit Switches];
+            Structure-->Pneumatics;
+            id5-->Pneumatics;
+            Structure-->id7[Limit Switch Elevator];
+            id5-->id7;
+            id6-->id7;
+            Structure-->id8[Tank Drive];
+            Encoders-->id9[Brush Motor];
+            id5-->id9;
+            Structure-->id9;
+        end
+    end
+    subgraph BasicsCapstone
+            direction BT
+            id10[Network Tables]~~~Shuffleboard;
+            Parallel/Sequential~~~Shuffleboard;
+            Debugging-->Shuffleboard;
+            Ternaries~~~Shuffleboard;
+            Lambdas~~~Shuffleboard;
+        end
+    FacilitationBasics-->CodeBasics;
+    BasicsPt.1-->BasicsCapstone;
+```
+
 
 # Robot
 1. Feedback/feedforward
@@ -64,13 +107,7 @@ Software Training structure for lakemonsters 2635
         - Deploy Monster vision
 
 
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
+
 
 # Elementary Java
 TBD
