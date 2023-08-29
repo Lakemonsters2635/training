@@ -10,37 +10,37 @@ Basics
         direction LR
         subgraph FacilitationBasics
             direction BT
-            id0[Development Environment Setup]-->id1
-            id1[Git Basics]-->Downloads;
-            Downloads-->id2[Robot Constants];
+            id0(Development Environment Setup)-->id1
+            id1(Git Basics)-->id12(Downloads);
+            id12-->id2(Robot Constants);
         end
         subgraph CodeBasics
             direction BT
-            Subsystem-->id3[Debugging Basics];
-            id3-->id4[Command Structure];
-            id4-->Structure;
-            id4-->id5[Button Bindings];
-            id4-->Encoders;
-            id4-->id6[Limit Switches];
-            Structure-->B[<a href='https://github.com/Lakemonsters2635/pneumatics_base'>Pneumatics</a>];
+            id11(Subsystem)-->id3(Debugging Basics);
+            id3-->id4(Commands);
+            id4-->id13(Structure);
+            id4-->id5(Button Bindings);
+            id4-->id14(Encoders);
+            id4-->id6(Limit Switches);
+            id13-->B(<a href='https://github.com/Lakemonsters2635/pneumatics_base'>Pneumatics</a>);
             id5-->B;
-            Structure-->A[<a href='https://github.com/Lakemonsters2635/ElevatorBase'>Limit Switch Elevator</a>];
+            id13-->A(<a href='https://github.com/Lakemonsters2635/ElevatorBase'>Limit Switch Elevator</a>);
             id5-->A;
             id6-->A;
-            Structure-->id8[Tank Drive];
-            Encoders-->id9[Brush Motor];
+            id13-->id8(Tank Drive);
+            id14-->id9(Brush Motor);
             id5-->id9;
-            Structure-->id9;
+            id13-->id9;
         end
     end
     subgraph BasicsCapstone
-            direction BT
-            id10[Network Tables]~~~Shuffleboard;
-            Parallel/Sequential~~~Shuffleboard;
-            Debugging-->Shuffleboard;
-            Ternaries~~~Shuffleboard;
-            Lambdas~~~Shuffleboard;
-        end
+        direction BT
+            id10(Network Tables)~~~id19(Shuffleboard);
+            id15(Parallel and Sequential)~~~id19;
+            id16(Debugging)-->id19;
+            id17(Ternaries)~~~id19;
+            id18(Lambdas)~~~id19;
+    end
     FacilitationBasics-->CodeBasics;
     BasicsPt.1-->BasicsCapstone;
     
