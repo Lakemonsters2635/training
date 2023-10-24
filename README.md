@@ -24,11 +24,11 @@ Basics
             id4-->id14(Encoders);
             id4-->id6(Limit Switches);
             id13-->A(<a href='https://github.com/Lakemonsters2635/ElevatorBase'>Limit Switch Elevator</a>);
-            id13-->B(<a href='https://github.com/Lakemonsters2635/pneumatics_base'>Pneumatics</a>);
+            id13-->C(<a href='https://github.com/Eddie-Prasad/TankDriveBase'>Tank Drive</a>);
             id5-->B;
             id5-->A;
             id6-->A;
-            id13-->id8(Tank Drive);
+            id13-->B(<a href='https://github.com/Lakemonsters2635/pneumatics_base'>Pneumatics</a>);
             id14-->id9(Brush Motor);
             id5-->id9;
             id13-->id9;
