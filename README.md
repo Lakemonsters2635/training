@@ -55,12 +55,6 @@ Basics
 5. [Arm](https://github.com/Lakemonsters2635/arm_motor_base)
 6. Tank
 7. Swerve
----
-Robot
----
-```mermaid
-
-```
 
 # Auto
 1. Command scheduler/auto chooser
@@ -69,12 +63,6 @@ Robot
     - Path planner basics
     - Path planner limitations
 1. Vision integration
----
-Auto
----
-```mermaid
-
-```
 
 # Vision
 - Limelight
@@ -97,12 +85,6 @@ Auto
         - Basic Linux commands
         - Deploy Monster vision
 
----
-Vision
----
-```mermaid
-
-```
 
 # Elementary Java
 TBD
