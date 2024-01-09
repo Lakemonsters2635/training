@@ -93,8 +93,8 @@ TBD
 - Vendor Libraries:
     - [CTRE Library Download](https://store.ctr-electronics.com/software/)
         - The link is at the bottom of the page, get the v5 link.
-    - [REV Library Download](https://docs.revrobotics.com/sparkmax/software-resources/spark-max-api-information#java-api)
-        - Located around the middle of the page, use the online installation method
+    - [REV Library Download](https://github.com/REVrobotics/REV-Software-Binaries/releases/tag/revlib-2024.2.0)
+        - Located in the read me, use this till they update real docs on REV site
     - [Kauai Labs Library Download](https://pdocs.kauailabs.com/navx-mxp/software/roborio-libraries/java/)
         - Located around the middle of the page, use the online installation method
 - [WPILib Java API Docs](https://github.wpilib.org/allwpilib/docs/release/java/index.html)
