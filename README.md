@@ -71,6 +71,8 @@ Basics
     1. Roboflow
     1. Python
     1. Training the model
+        - Tensorflow or Pytorch(MNIST tutorials)
+        - YOLO v.4
     4. Oak camera
     5. Deploying models on oak camera
 - Machine learning vision advanced
