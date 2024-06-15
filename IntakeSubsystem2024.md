@@ -15,7 +15,12 @@ Refer to the Motor Setup and Troubleshooting document to retrieve the CAN ID of 
 Note that the procedure for setting up different motors varies.
 
 ### Make a subsystem for the motors of the intake
-aasfd
+Test message
+```java
+// demo of how we can do put nice formatted code examples
+// into markdown so we do not need to copy/paste images.
+private static String someString;
+```
 
 ### Set up constants for motor CAN IDs
 adf
