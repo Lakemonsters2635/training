@@ -1,7 +1,8 @@
 # Arm Position Tutorial
 
 ### Overview
-Steps for making an arm that can go to a any given position using PID
+Make sure you type everything **manually** it builds memory better than copy and pasting simple statements that you will eventually be burned into your memory when you type it. 
+Steps for making an arm that can go to a any given position using PID.
 * Start the Arm Constants
 * Make a subsystem for the arm motors
 * Create a MoveArmToPoseCommand
@@ -23,17 +24,17 @@ Create new ```TalonFX``` for the motor controllers using the Motor IDs from Cons
 ```java 
     //PID used for moving arm
     //Note that the P value may need a little bit changing through experimentation
+    //Note that there is two motors and example code for declaring only one is shown
+
     private PIDController pid = new PIDController(0.009, 0.0, 0.0); 
 
-    public TalonFX m_armMotorLeft;
-    public TalonFX m_armMotorRight;
+    private TalonFX m_armMotorLeft;
+
     public ArmSubsystem(){
         m_armMotorLeft = new TalonFX(Constants.LEFT_ARM_MOTOR_ID);
-        m_armMotorRight = new TalonFX(Constants.RIGHT_ARM_MOTOR_ID);
 
         //Brake Mode so the arm doesn't ever fall with full force (Safety)
-        m_armMotor1.setNeutralMode(NeutralModeValue.Brake);
-        m_armMotor2.setNeutralMode(NeutralModeValue.Brake);
+        m_armMotorLeft.setNeutralMode(NeutralModeValue.Brake);
     }
 ```
 Positions of the arm are measured in encoder counts by an encoder, however it needs to be converted into a degree system for convience. To do this there are three steps.
@@ -83,7 +84,7 @@ After instantiating subsystems in the command add an angle variable that gets pa
 Lastly, in ```isFinished()``` call the ```areWeThereYet()``` method that was created to end the command when the arm reaches the current position
 
 ### Bind ```MoveArmToPoseCommand``` to a button
-In RobotContainer, create a button for the IntakeCommand.
+In RobotContainer, make an instance of the subsystem, make an instance of the command, and create a button for the IntakeCommand. 
 ```java
     Trigger armButton = new JoystickButton(rightJoystick, Constants.ARM_BUTTON);
 ```
