@@ -74,13 +74,13 @@ motorPower = fbMotorpower;
 ```
 The clamp is so the pid does not give the motors too much power. In the constructor set the starting ```m_poseTarget``` to a starting position/angle you want so the arm does not go crazy when enabled. Also set positions for where you can give zero motor power to make sure motors will not overheat. 
 
-The last thing you need to do in the subsystem is create some methods. Such as a setter for poseTarget.
+The last thing you need to do in the subsystem is create some methods. Such as a setter for poseTarget and an ```areWeThereYet()``` method to see if the arm has reached the position or is close enough to call it has reached the position.
 
 ### Create a ```MoveArmToPoseCommand```
 
 After instantiating subsystems in the command add an angle variable that gets passed in the paremeters of the constructor to be used in ```initialzie()``` with the setter method for ```poseTarget``` that you created in your subsystem. 
 
-Lastly, in ```end()``` put a method for zeroing arm power
+Lastly, in ```isFinished()``` call the ```areWeThereYet()``` method that was created to end the command when the arm reaches the current position
 
 ### Bind ```MoveArmToPoseCommand``` to a button
 In RobotContainer, create a button for the IntakeCommand.
@@ -89,7 +89,7 @@ In RobotContainer, create a button for the IntakeCommand.
 ```
 Set the button to run the IntakeCommand when pressed.
 ```java
-    armButton.whileTrue(m_moveArmToPoseCommand);
+    armButton.onTrue(m_moveArmToPoseCommand);
 ```
 
 ### Common Mistakes
@@ -109,4 +109,4 @@ Ask someone who is not a rookie to come look at your code before you run it and 
 ### Where To Go From Here   
 This code only consists of proportion control out of proportion, integral, and derivative (PID). Tuning the others in would help with oscilation and effecient movement.
 
-The code is only feedback motor power. Adding in ```feedforward```, changing the command to ```onTrue```, and adding a ```areWeThereYet()``` method to the ```isFinished()``` of the command will make it the ```moveArmToPoseCommand``` much more usable and effficient.
+The code is only feedback motor power. Learning the process of finding the feedforward motor power is also very beneficial, however it is already given to you in this tutorial.
