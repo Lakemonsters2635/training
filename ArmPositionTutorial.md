@@ -10,7 +10,7 @@ Steps for making an arm that can go to a any given position using PID.
 
 ### Setting up the Arm Constants
 
-In Constants, create variables to store the motor's CAN ID and speeds for the intake motor.
+In Constants, create variables to store the motor's CAN ID and speeds for the intake motor. You will add to these constants later.
 ```java
 // ARM CONSTANTS
     public static final int LEFT_ARM_MOTOR_ID = 21;
